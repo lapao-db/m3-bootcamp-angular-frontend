@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* importar tipografías */
+/* variables de css --> Paleta de colores */
+/* condiciones iniciales (opcinal) */
+
+@import url('https://fonts.cdnfonts.com/css/freshener');
+
+/* variables de css */
+:root{
+    --primary-color:#8A2EFF;
+    --secondary-color:#7f00b2;
+    --light-background:#F4CAFF;
+    --dark-background:#4c007d;
+    --enfasis-color:#f988ff;
+    --text-color:#1B004B;
+}
+body{
+    background-color: var(--light-background);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Freshener', sans-serif;
+}
