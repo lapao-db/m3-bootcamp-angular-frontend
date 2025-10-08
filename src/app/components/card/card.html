@@ -1,1 +1,25 @@
+<h2>Esto es una tarjeta</h2>
+<p>Aqui van a ir los productos</p>
 <p>card works!</p>
+<section class="row">
+  <!-- Utilizar estructura de control de flujo for y el if-else -->
+  @for (item of allProducts; track $index) {
+    <!-- contenido dinamico: cambie dependiendo de la base de datos
+     interpolacion: {{poner la variable que quiere mostrar}} -->
+    <div class="col">
+        <div class="card" style="width: 18rem">
+        <!-- [] -> prepara para recibir contenido del ts -->
+        <img [src]="baseUrl+ item.image" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">
+            {{ item.description }}
+            </p>
+            <a href="#" class="btn btn-primary">{{ item.price }}</a>
+            <h3>{{item.categories}}</h3>
+            <h6>Ejemplo estático</h6>
+        </div>
+        </div>
+    </div>
+  }
+</section>

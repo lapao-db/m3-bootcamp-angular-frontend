@@ -4,6 +4,7 @@
 /* condiciones iniciales (opcinal) */
 
 @import url('https://fonts.cdnfonts.com/css/freshener');
+@import url('https://fonts.cdnfonts.com/css/b612-mono');
 
 /* variables de css */
 :root{
@@ -13,11 +14,19 @@
     --dark-background:#4c007d;
     --enfasis-color:#f988ff;
     --text-color:#1B004B;
+    --font-title:'Freshener', sans-serif;
+    /* 400 */
+    --fint-body:'B612 Mono', sans-serif; 
+    /* 400, 700 italic, bold */
 }
 body{
     background-color: var(--light-background);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Freshener', sans-serif;
+    font-family: 'B612 Mono', sans-serif;
 }
+
+h1, h2, h3 {
+      font-family:var(--font-title); font-weight: 400;
+    }

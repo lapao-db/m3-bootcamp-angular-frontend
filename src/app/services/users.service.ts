@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../interfaces/user';
-import { enviroment } from '../../enviroments/enviroment';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -9,7 +9,7 @@ import { enviroment } from '../../enviroments/enviroment';
 })
 export class UserService {
     private _httpClient = inject(HttpClient); // Importar metodo HttpClient inject
-    private apiUrl = enviroment.baseUrl; 
+    private apiUrl = environment.baseUrl; 
 
     //Metodos para hacer las peticiones
 

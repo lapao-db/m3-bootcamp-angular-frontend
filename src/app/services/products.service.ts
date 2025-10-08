@@ -2,7 +2,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Product } from '../interfaces/product.interface';
-import { enviroment } from '../../enviroments/enviroment';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ export class ProductService {
   //2. Definir la ruta de acceso al back
   
   //private apiUrl = 'http://localhost:3000'; //url general del back
-  private apiUrl = enviroment.baseUrl; //de la variable de entorno llamamos la url de la app
+  private apiUrl = environment.baseUrl; //de la variable de entorno llamamos la url de la app
 
   //3. Métodos para hacer las peticiones (se nombran como se quiera)
 
@@ -25,7 +25,7 @@ export class ProductService {
   };
 
   //peticion GET
-  getProduct(){
+  getProducts(){
     return this._httpClient.get(this.apiUrl + "/products/mostrar");
 
   };
