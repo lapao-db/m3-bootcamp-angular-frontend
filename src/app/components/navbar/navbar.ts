@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 //importar directiva
 import { RouterLink } from '@angular/router';
+import { LoginService } from '../../services/login';
 
 @Component({
   selector: 'app-navbar', //etiqueta de html
@@ -9,5 +10,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-
+  
+  private _loginService = inject(LoginService);
+  isVisible: boolean = this._loginService.isAdmin();
 }

@@ -1,0 +1,25 @@
+/* Estilos Form Inicio de Sesion */
+
+main{
+    border: solid green;
+    width: 100vw;
+    height: 100vh;
+}
+
+.formulario{
+    border: solid orangered;
+    width: 50%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.btn{
+    background: var(--secondary-color);
+    color: var(--light-background);
+}
+
+.form-control{
+    background-color: var(--secondary-color);
+}

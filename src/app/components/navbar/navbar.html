@@ -1,10 +1,27 @@
 <!-- MENU DE NAVEGACION -->
-<nav>
-    <ul>
-        <li><a routerLink="/">Inicio</a></li>
-        <li><a routerLink="/products">Productos</a></li>
-        <li><a routerLink="/login">Inicio de Sesión</a></li>
-        <li><a routerLink="/register">Registro</a></li>
-        <li><a routerLink="/admin">Dashoboard</a></li>
-    </ul>
+
+<nav class="navbar navbar-expand-lg border-bottom border-body fixed-top bNav">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand logo" routerLink="#">
+        <img src="/assets/logo_papeleria_barNav.jpg" alt="Logo Escrito y Envuelto" class="img-fluid" width="60" height="60">
+        Escrito y Envuelto
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+            <li><a class="nav-link active" aria-current="page" routerLink="/">Inicio</a></li>
+            <li><a class="nav-link active" routerLink="/products">Productos</a></li>
+
+            @if(isVisible){
+               <li><a class="nav-link " routerLink="/admin">Dashoboard</a></li>
+            }
+           
+            <li><a class="btn btn-registro" routerLink="/register">Registro</a></li>
+            <li><a class="btn btn-sesion" routerLink="/login">Inicio de Sesión</a></li>
+        </ul>
+    </div>
+  </div>
 </nav>

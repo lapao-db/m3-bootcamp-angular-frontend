@@ -1,0 +1,17 @@
+.contenedor-nav{
+    background: var(--secondary-color);
+    
+}
+.nav-link{
+    color:var(--light-background)
+}
+
+.nav-link.active {
+    background-color: var(--dark-background);
+    color:var(--light-background);
+    border-radius: 10px;
+}
+
+.cierre {
+    cursor: pointer;
+}

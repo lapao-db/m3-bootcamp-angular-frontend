@@ -1,0 +1,22 @@
+/* Footer */
+.footer {
+    padding: 30px;
+    width: 100vw;
+    height: 150px;
+    background-color: var(--dark-background);
+    /* position: fixed; */
+    bottom: 0;
+    color: var(--enfasis-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+        
+}

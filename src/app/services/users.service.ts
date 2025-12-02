@@ -19,7 +19,7 @@ export class UserService {
     }
     //Metodo GET
     getUser(){
-      return this._httpClient.get(`${this.apiUrl}/users`)
+      return this._httpClient.get(`${this.apiUrl}/users`);
     }
     //Metodo PUT
     putUser(userToUpdate : User, idUser:string){
@@ -27,7 +27,7 @@ export class UserService {
     }
     //Metodo DELETE
     deleteUser(idDelete: string){
-      return this._httpClient.delete(`${this.apiUrl}/users${idDelete}`);
+      return this._httpClient.delete(`${this.apiUrl}/users/${idDelete}`);
 
     }
     

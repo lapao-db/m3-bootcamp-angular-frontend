@@ -19,14 +19,21 @@
     --fint-body:'B612 Mono', sans-serif; 
     /* 400, 700 italic, bold */
 }
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
 body{
     background-color: var(--light-background);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'B612 Mono', sans-serif;
+    color: var(--text-color)
+    
 }
 
 h1, h2, h3 {
       font-family:var(--font-title); font-weight: 400;
     }
+

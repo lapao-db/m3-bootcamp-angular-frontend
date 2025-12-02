@@ -1,1 +1,71 @@
-<p>register works!</p>
+<!-- Contenido Principal REgistro-->
+<main>
+  <form class="formulario" [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
+    <h1>Formulario de Registro</h1>
+    <!-- Nombre Completo -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre Completo</label>
+      <input 
+        type="text" 
+        class="form-control"
+        id="nombre"
+        formControlName="name"
+        placeholder="Ingrese su nombre completo"
+        required=""
+      />
+      
+    </div>
+    <!-- Username -->
+    <div class="mb-3">
+      <label for="username" class="form-label">Nombre de Usuario</label>
+      <input 
+        type="text" 
+        class="form-control"
+        id="username"
+        formControlName="username"
+        autocomplete="username"
+        placeholder="Ingrese su nombre de usuario"
+        required
+
+      />
+    
+    </div>
+    <!-- Correo -->
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo Electronico</label>
+      <input 
+        type="email" 
+        class="form-control"
+        id="correo"
+        formControlName="email"
+        autocomplete="email"
+        placeholder="Ingrese su correo"
+        required
+      />
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <!-- Edad -->
+    <div class="mb-3">
+      <label for="edad" class="form-label">Edad</label>
+      <input 
+        type="number" 
+        class="form-control"
+        id="edad"
+        formControlName="age"   
+        placeholder="Ingrese su Edad"
+        required     
+      />
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <!-- Contraseña -->
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword" formControlName="password" autocomplete="new-password" placeholder="Ingrese su contraseña" />
+    </div>
+    <!-- Validadores para html puro -->
+    <!-- required minlength="8" -->
+
+    <!-- Boton Inicio Sesion -->
+    <button type="submit" class="btn">Submit</button >
+  </form>
+</main>

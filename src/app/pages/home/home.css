@@ -1,0 +1,18 @@
+/* HOME */
+
+.banner{
+    width: 100vw;
+    height: 70vh;
+    background: var(--secondary-color);
+}
+
+.products{
+    width: 100vw;
+    height: 80vh;
+}
+
+.call-to-action{
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--enfasis-color)
+}

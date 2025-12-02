@@ -1,0 +1,18 @@
+
+.logo{
+    color: var(--secondary-color);
+    font-family: var(--font-title);
+    border-radius: 50 px;
+}
+
+/* Botones */
+.btn {
+    border:none;
+    padding: 2px 20px;
+    border-radius: 50 px;
+    color: var(--enfasis-color)
+}
+
+.btn-registro{
+    background-color: var(--primary-color);
+}
